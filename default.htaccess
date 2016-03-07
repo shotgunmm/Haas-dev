@@ -1,0 +1,17 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteRule ^blog/cruising-the-east-coast-craft-scene http://www.johnihaas.com/blog/cruising-the-east-coast-craft-scene/ [L,R=301]
+RewriteBase /haas
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /haas/index.php [L]
+</IfModule>
+
+# END WordPress
+
+
+
+
