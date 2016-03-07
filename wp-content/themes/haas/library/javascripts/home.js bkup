@@ -1,0 +1,130 @@
+function carettab(){
+	var www = $(window).width();
+	$('#about-menu-nav').click(function() {
+		if(www < 750){
+			$('ul#about-tab-mobile').toggle();
+			$(this).toggleClass('open');
+		}
+	});
+	$('#resource-menu-nav').click(function() {
+		if(www < 750){
+			$('ul#resource-mob-tab').toggle();
+			$(this).toggleClass('open');
+		}
+	});
+
+	$('#about-tab-mobile li').click(function() {
+		if(www < 750){
+			$('#about-tab-mobile').hide();
+			$('#about-menu-nav').toggleClass('open');
+		}
+	});
+
+	$('#resource-mob-tab li').click(function() {
+		if(www < 750){
+			$('#resource-mob-tab').hide();
+			$('#resource-menu-nav').toggleClass('open');
+		}
+	});
+	$('.nav.navbar-nav.top-nav li').click(function() {
+		if(www < 750){
+			$('#navbar').removeClass('in');
+		}
+	});
+}
+
+$('document').ready(function() {
+	var ww = $(window).width();
+	if (navigator.userAgent.toLowerCase().indexOf("iphone") ==-1) {
+		
+	}else{
+		//iphone
+		carettab();
+	}
+
+
+	slider1 = $('.bxslider').bxSlider({
+		pager: false,
+		infiniteLoop: false,
+		hideControlOnEnd: true
+	});
+
+	abt_slider = $('.abt-bxslider').bxSlider({
+		minSlides: 2,
+		maxSlides: 2,
+		slideWidth: 1000,
+		slideMargin: 10,
+		pager: false,
+		infiniteLoop: false,
+		hideControlOnEnd: true
+	});
+
+
+	var ww = $(window).width();
+	if (ww > 750) {
+		slider2 = $('.other').bxSlider({
+			minSlides: 2,
+			maxSlides: 2,
+			slideWidth: 1000,
+			slideMargin: 10,
+			pager: false
+		});
+		$('.bxslider2').bxSlider({
+			pager: false,
+			infiniteLoop: false,
+			hideControlOnEnd: true
+		});
+	}
+
+	$('a[aria-controls="abt-history"]').click(function() {
+		setTimeout(function() {
+			slider1.reloadSlider();
+		}, 200);
+	});
+
+	$('a[aria-controls="abt-haas"]').click(function() {
+		console.log('hello');
+		setTimeout(function() {
+			abt_slider.reloadSlider();
+		}, 200);
+	});
+
+
+
+
+	$('a[aria-controls="oth-res"]').click(function() {
+		if (ww > 750) {
+			setTimeout(function() {
+				slider2.reloadSlider();
+			}, 200);
+		}
+	});
+
+});
+$(window).load(function() {
+	var winwid = $(window).width();
+	if (winwid > 992) {
+		var maxHeight = -1;
+		$('div.find-height').each(function() {
+			maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+		});
+
+
+		$('div.find-height').css('min-height', (maxHeight - 70) + "px");
+
+
+		var maxHeight1 = -1;
+		$('div.other-height').each(function() {
+			maxHeight1 = maxHeight1 > $(this).height() ? maxHeight1 : $(this).height();
+		});
+		$('div.other-height').each(function() {
+			$(this).css('min-height', maxHeight1 + "px");
+		});
+	}
+});
+
+$(window).resize(function(){
+	if (navigator.userAgent.toLowerCase().indexOf("iphone") ==-1) {
+		carettab();
+	}
+});

@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'transatstandard';
+	src: url('transat-standard.eot');
+	src: url('transat-standard.eot?#iefix') format('embedded-opentype'), url('transat-standard.woff2') format('woff2'), url('transat-standard.woff') format('woff'), url('transat-standard.ttf') format('truetype'), url('transat-standard.svg#transatstandard') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'transatstandard_oblique';
+	src: url('transat-standard_oblique.eot');
+	src: url('transat-standard_oblique.eot?#iefix') format('embedded-opentype'), url('transat-standard_oblique.woff2') format('woff2'), url('transat-standard_oblique.woff') format('woff'), url('transat-standard_oblique.ttf') format('truetype'), url('transat-standard_oblique.svg#transatstandard_oblique') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'transatmedium_oblique';
+	src: url('transat-medium_oblique.eot');
+	src: url('transat-medium_oblique.eot?#iefix') format('embedded-opentype'), url('transat-medium_oblique.woff2') format('woff2'), url('transat-medium_oblique.woff') format('woff'), url('transat-medium_oblique.ttf') format('truetype'), url('transat-medium_oblique.svg#transatmedium_oblique') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'transatlight_oblique';
+	src: url('transat-light_oblique.eot');
+	src: url('transat-light_oblique.eot?#iefix') format('embedded-opentype'), url('transat-light_oblique.woff2') format('woff2'), url('transat-light_oblique.woff') format('woff'), url('transat-light_oblique.ttf') format('truetype'), url('transat-light_oblique.svg#transatlight_oblique') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'transatmedium';
+	src: url('transat-medium.eot');
+	src: url('transat-medium.eot?#iefix') format('embedded-opentype'), url('transat-medium.woff2') format('woff2'), url('transat-medium.woff') format('woff'), url('transat-medium.ttf') format('truetype'), url('transat-medium.svg#transatmedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'transatlight';
+	src: url('transat-light.eot');
+	src: url('transat-light.eot?#iefix') format('embedded-opentype'), url('transat-light.woff2') format('woff2'), url('transat-light.woff') format('woff'), url('transat-light.ttf') format('truetype'), url('transat-light.svg#transatlight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'transatblack_oblique';
+	src: url('transat-black_oblique.eot');
+	src: url('transat-black_oblique.eot?#iefix') format('embedded-opentype'), url('transat-black_oblique.woff2') format('woff2'), url('transat-black_oblique.woff') format('woff'), url('transat-black_oblique.ttf') format('truetype'), url('transat-black_oblique.svg#transatblack_oblique') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'transatblack';
+	src: url('transat-black.eot');
+	src: url('transat-black.eot?#iefix') format('embedded-opentype'), url('transat-black.woff2') format('woff2'), url('transat-black.woff') format('woff'), url('transat-black.ttf') format('truetype'), url('transat-black.svg#transatblack') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'transatbold_oblique';
+	src: url('transat-bold_oblique.eot');
+	src: url('transat-bold_oblique.eot?#iefix') format('embedded-opentype'), url('transat-bold_oblique.woff2') format('woff2'), url('transat-bold_oblique.woff') format('woff'), url('transat-bold_oblique.ttf') format('truetype'), url('transat-bold_oblique.svg#transatbold_oblique') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'transat_standardbold';
+	src: url('transat-bold.eot');
+	src: url('transat-bold.eot?#iefix') format('embedded-opentype'), url('transat-bold.woff2') format('woff2'), url('transat-bold.woff') format('woff'), url('transat-bold.ttf') format('truetype'), url('transat-bold.svg#transat_standardbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo700';
+	src: url('museo700-regular.eot');
+	src: url('museo700-regular.eot?#iefix') format('embedded-opentype'),  url('museo700-regular.woff2') format('woff2'),  url('museo700-regular.woff') format('woff'),  url('museo700-regular.ttf') format('truetype'),  url('museo700-regular.svg#museo700') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo300';
+	src: url('museo300-regular.eot');
+	src: url('museo300-regular.eot?#iefix') format('embedded-opentype'),  url('museo300-regular.woff2') format('woff2'),  url('museo300-regular.woff') format('woff'),  url('museo300-regular.ttf') format('truetype'),  url('museo300-regular.svg#museo300') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

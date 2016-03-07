@@ -1,0 +1,37 @@
+/* SORT VARIETIES BY REGION */
+.var-sort-list-wrap {
+	height: 300px;
+	position: relative;
+	margin-top: 37px;
+	background: white;
+}
+
+.var-sort-list div span {
+	color: #408620;
+	float: left;
+	line-height: 50px;
+	margin: 0 0 1px;
+	padding: 0 15px;
+	width: 100%;
+	background: #408620;
+	background: #dae4d7;
+	font-size: 20px;
+	font-family: transat_standardbold;	
+	text-transform: uppercase;
+	text-align: center;
+}
+.var-sort-list { display: none; position: absolute; }
+.var-sort-list ul li { background: #ecf1eb }
+.var-sort-list.active { display: block; }
+
+
+/* INDENT SUB PRODUCTS */
+.product-list li.sub-item h6 { padding-left: 35px; }
+
+
+.green-container-wrap {
+	position: relative;
+	padding-right: 30px;
+}
+.green-container { width: 100%; }
+.green-container .cross-img { margin-right: 15px; }

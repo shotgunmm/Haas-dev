@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HAAS</title>
+	<link href="fonts/font.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+   <!-- <link href="css/jquery.sidr.dark.css" rel="stylesheet">
+   <link href="css/jquery.sidr.light.css" rel="stylesheet"> -->
+   <link href="css/hamburger.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+   <script src="js/custom-form-elements.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script src="js/prefixfree.min.js"></script>
+   <script src="js/jquery.bxslider.js"></script>
+   <link href="css/jquery.bxslider.css" rel="stylesheet" />
+   <script>
+   $('document').ready(function() {
+	var ww = $(window).width();
+	if (ww < 750) {
+		$('#about-menu-nav').click(function() {
+			$('ul#about-tab-mobile').toggle();
+			$(this).toggleClass('open');
+		});
+		$('#resource-menu-nav').click(function() {
+			$('ul#resource-mob-tab').toggle();
+			$(this).toggleClass('open');
+		});
+
+		$('#about-tab-mobile li').click(function() {
+			$('#about-tab-mobile').hide();
+			$('#about-menu-nav').toggleClass('open');
+		});
+
+		$('#resource-mob-tab li').click(function() {
+			$('#resource-mob-tab').hide();
+			$('#resource-menu-nav').toggleClass('open');
+		});
+
+		$('.nav.navbar-nav.top-nav li').click(function() {
+			$('#navbar').removeClass('in');
+		});
+	}
+
+	slider1 = $('.bxslider').bxSlider({
+		pager: false
+	});
+
+
+	var ww = $(window).width();
+	if (ww > 750) {
+		slider2 = $('.other').bxSlider({
+			minSlides: 2,
+			maxSlides: 2,
+			slideWidth: 1000,
+			slideMargin: 10,
+			pager: false
+		});
+		$('.bxslider2').bxSlider({
+			pager: false
+		});
+	}
+
+	$('a[aria-controls="abt-history"]').click(function() {
+		setTimeout(function() {
+			slider1.reloadSlider();
+		}, 200);
+	});
+
+
+	$('a[aria-controls="oth-res"]').click(function() {
+		if (ww > 750) {
+			setTimeout(function() {
+				slider2.reloadSlider();
+			}, 200);
+		}
+	});
+});
+$(window).load(function() {
+	var winwid = $(window).width();
+	if (winwid > 992) {
+		var maxHeight = -1;
+		$('div.find-height').each(function() {
+			console.log($(this).height());
+			maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+		});
+
+
+		$('div.find-height').css('min-height', (maxHeight - 70) + "px");
+
+
+		var maxHeight1 = -1;
+		$('div.other-height').each(function() {
+			maxHeight1 = maxHeight1 > $(this).height() ? maxHeight1 : $(this).height();
+		});
+		$('div.other-height').each(function() {
+			$(this).css('min-height', maxHeight1 + "px");
+		});
+	}
+});
+
+
+</script>
+
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+  </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+	<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="top-info">
+				<ul>
+					<li><a href="event.html" class="page-scroll">News &amp; Events</a> </li>
+					<li>|</li>
+					<li><a href="careers.html" class="page-scroll">Careers</a> </li>
+					
+				</ul>
+			</div>
+			<div class="navbar-header">
+			   <!-- <button aria-controls="navbar"  aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button"> 
+			   <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>-->
+
+			 <header>
+				<a id="hamburger" href="javascript:void(0);"><span></span></a>
+			</header>
+
+				<!--<a href="javascript:void(0);" class="navbar-toggle collapsed resize-btn" id="nav-toggle"><span></span></a>
+				<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> -->
+
+
+				<a href="#page-top" class="page-scroll brand-logo"><img src="images/logo.png" alt=""> </a>
+			</div>
+			<div class="navbar-collapse collapse mobile-nav"  id="navbar">
+				<ul class="nav navbar-nav top-nav">
+					<li><a class="page-scroll" href="#about-us">About Us</a> </li>
+					<li><a class="page-scroll" href="#variety">Varieties</a> </li>
+					<li><a class="page-scroll" href="#product">Products</a> </li>
+					<li><a class="page-scroll" href="#resource">Industry Resources</a> </li>
+					<li><a class="page-scroll" href="#partner">Partners</a> </li>
+					<li><a class="page-scroll" href="#why-haas">Why Haas?</a> </li>
+					<li><a class="page-scroll" href="#contact">Contact Us</a> </li>
+					<li class="show-mobile"><a href="event.html">News &amp; Events</a> </li>
+					<li class="show-mobile"><a href="careers.html">Careers</a> </li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="navsection">
+		<ul class="nav navbar-nav top-nav">
+			<li><a class="page-scroll" href="#about-us">About Us</a> </li>
+			<li><a class="page-scroll" href="#variety">Varieties</a> </li>
+			<li><a class="page-scroll" href="#product">Products</a> </li>
+			<li><a class="page-scroll" href="#resource">Industry Resources</a> </li>
+			<li><a class="page-scroll" href="#partner">Partners</a> </li>
+			<li><a class="page-scroll" href="#why-haas">Why Haas?</a> </li>
+			<li><a class="page-scroll" href="#contact">Contact Us</a> </li>
+			<li class="show-mobile"><a href="event.html">News &amp; Events</a> </li>
+			<li class="show-mobile"><a href="careers.html">Careers</a> </li>
+		</ul>
+	</div>
+	<section id="banner">
+
+		<div id="carousel-example-generic" class="carousel slide no-mobile" data-ride="carousel" data-interval="7000">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+
+			<div class="black-background">
+
+				<div class="carousel-caption img-cap"> <span class="bannre-text"> <img src="images/banner-leaf.png" alt="">
+				  <h4>HERE’s To the Moments</h4>
+				  <h5>That make brewing beer the best job in the world.</h5>
+			  </span>
+			  <p>Whether you’re brewing 100 barrels a year or 100 million,
+				<br> Haas shares your passion for creating flavors that people love.
+				<br> From field to glass, Haas is here for your success.</p>
+
+			</div>
+		</div>
+		<div class="carousel-inner carousel slide" role="listbox" id="myCarousel">
+
+
+			<div class="item active"> <img src="images/banner-mitch.jpg" alt="">
+				<small class="fadevalue">Mitch Steele, Brewmaster, Stone Brewing Company</small>
+			</div>
+			<div class="item"> 
+				<img src="images/banner-matt.jpg" alt="">
+				<small class="fadevalue">Matt Bryndilson, Brewmaster, Firestone Walker  Brewing Company</small>
+
+			</div>
+			<div class="item"> <img src="images/banner-jeff.jpg" alt="">
+				<small class="fadevalue">Jeff Edgerton, Brewmaster, Bridgeport Brewing</small>
+			</div>
+			<div class="item"> <img src="images/banner-john.jpg" alt="">
+				<small class="fadevalue">John Eaton, Brewing Manager, Craft Beer Alliance</small>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="wide-sev-banner">
+		<div id="carousel-example-generic-web" class="carousel slide" data-ride="carousel" data-interval="7000">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic-web" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic-web" data-slide-to="1" class="active"></li>
+				<li data-target="#carousel-example-generic-web" data-slide-to="2" class="active"></li>
+				<li data-target="#carousel-example-generic-web" data-slide-to="3" class="active"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+			 <div class="item active"> <img src="images/Mitch_Stone-tablet-750.jpg" alt=""> 
+			  <small class="fadevalue">Mitch Steele, Brewmaster,<br/> Stone Brewing Company</small>
+		  </div>
+
+		  <div class="item"> <img src="images/Matt_Firestone-tablet-750.jpg" alt="">
+
+			<small class="fadevalue">Matt Bryndilson, Brewmaster,<br/> Firestone Walker  Brewing Company</small>
+		</div>
+		<div class="item"> <img src="images/Jeff_Bridgeport-tablet-750.jpg" alt=""> 
+		 <small class="fadevalue">Jeff Edgerton, Brewmaster,<br/> Bridgeport Brewing</small>
+	 </div>
+	 <div class="item"> <img src="images/John_Widmer_CBA-tablet-750.jpg" alt=""> 
+	  <small class="fadevalue">John Eaton, Brewing Manager,<br/> Craft Beer Alliance</small>
+  </div>
+
+</div>
+  <div class="carousel-caption img-cap"> <span class="bannre-text"> <img src="images/banner-leaf.png" alt="">
+	  <h4>HERE’s To the Moments</h4>
+	  <h5>That make brewing beer the best job in the world.</h5>
+  </span>
+  <p>Whether you’re brewing 100 barrels a year or 100 million,
+	<br> Haas shares your passion for creating flavors that people love.
+	<br> From field to glass, Haas is here for your success.</p>
+
+</div>
+</div>
+</div>
+<a data-slide="prev" id="left-arrow-all" href="#myCarousel" class="left carousel-control common-class"> <span class="icon-prev"><img src="images/slider-left-arrow.png" class="img-nav" width="15" height="40" alt=""></span> </a>
+	<a data-slide="next" id="right-arrow-all" href="#myCarousel" class="right carousel-control common-class"> <span class="icon-next"><img src="images/slider-right-arrow.png" width="15" height="40" alt="" class="img-nav"></span> </a>
+<!--<a data-slide="prev" href="#carousel-example-generic-web" class="left carousel-control common-class"> <span class="icon-prev"><img src="images/slider-left-arrow.png" class="img-nav" width="15" height="40" alt=""></span> </a>
+	<a data-slide="next" href="#carousel-example-generic-web" class="right carousel-control common-class"> <span class="icon-next"><img src="images/slider-right-arrow.png" width="15" height="40" alt="" class="img-nav"></span> </a> -->
+<div class="mobile-banner">
+	<div id="carousel-example-generic-mobile" class="carousel slide" data-ride="carousel" data-interval="7000">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic-mobile" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic-mobile" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic-mobile" data-slide-to="2"></li>
+			<li data-target="#carousel-example-generic-mobile" data-slide-to="3"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+
+		<div class="black-background">
+
+
+		</div>
+		<div class="carousel-inner carousel slide" role="listbox" id="myCarousel-mobile">
+
+			<div class="item active"> <img src="images/mobile-banner5mitch.jpg" alt="">
+				<small class="fadevalue">Mitch Steele, Brewmaster, Stone Brewing Company</small>
+			</div>
+			<div class="item"> 
+				<img src="images/mobile-banner4matt.jpg" alt="">
+				<small class="fadevalue">Matt Bryndilson, Brewmaster, Firestone Walker  Brewing Company</small>
+
+			</div>
+			<div class="item"> <img src="images/mobile-banner3john.jpg" alt="">
+				<small class="fadevalue">Jeff Edgerton, Brewmaster, Bridgeport Brewing</small>
+			</div>
+			<div class="item"> <img src="images/mobile-banner1.jpg" alt="">
+				<small class="fadevalue">John Eaton, Brewing Manager, Craft Beer Alliance</small>
+			</div>
+		</div>
+	</div>
+
+	<div class="carousel-caption img-cap"> <span class="bannre-text"> <img src="images/banner-leaf.png" alt="">
+	  <h4>HERE’s To the Moments</h4>
+	  <h5>That make brewing beer the best job in the world.</h5>
+  </span>
+  <p>Whether you’re brewing 100 barrels a year or 100 million,
+	<br> Haas shares your passion for creating flavors that people love.
+	<br> From field to glass, Haas is here for your success.</p>
+
+</div>
+</div>
+
+</section>
+<section id="green-links">
+	<div class="container">
+		<div class="row three-link">
+			<ul>
+				<li>
+					<a href="#inno-bre" settrigger="innovate" relative="inno-bre" class="move-via-green" aria-controls="inno-bre" role="tab" data-toggle="tab"><img src="images/curve-arrow.png" alt="">
+						<h6>Tour Our Research Brewery</h6>
+					</a>
+				</li>
+				<li>
+					<a href="#hop-acd" settrigger="hop" relative="hop-acd" class="move-via-green" aria-controls="hop-acd" role="tab" data-toggle="tab"><img src="images/curve-arrow.png" alt="">
+						<h6>Attend The Hops Academy</h6>
+					</a>
+				</li>
+				<li>
+					<a href="#oth-res" settrigger="oth" relative="oth-res" class="move-via-green" aria-controls="oth-res" role="tab" data-toggle="tab"><img src="images/curve-arrow.png" alt="">
+						<h6>Information &amp; Resources</h6>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section id="about-us" data-speed="2" data-type="background" data-identity="about">
+	<div class="container">
+		<div class="row">
+			<h2 class="sec-title" id="about-menu-nav">About Us</h2>
+			<div class="about-tab">
+				<div role="tabpanel">
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active find-height" id="abt-over">
+							<div class="row">
+								<div class="col-md-5">
+									<h3>Haas. From hop to tap <em>(and everything in between).</em></h3>
+									<p>You could say that Haas is North America’s leading hops supplier. And that would be true. But what’s also true is that Haas is a lot more than a hops supplier. We are also a breeder, a research brewery, and a loyal partner and, most of all, innovators – tireless professionals who are passionate about helping you brew great tasting beer. Whether you’re brewing 100 barrels or 100 million, Haas has the products, tools, services and supply assurance you need to brew successful beers. And isn’t that why you’re here?</p>
+								</div>
+								<div class="col-md-7 abt-tb-pic" id="abt-tb-pic"> <img src="images/abt-tab-pic.jpg" alt="" class="img-responsive"> </div>
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane fade find-height" id="abt-history" style="min-height:570px;">
+							<ul class="bxslider">
+								<li>
+									<div class="row">
+										<div class="row-padding">
+											<div class="col-md-6">
+												<h3>The backstory</h3>
+												<p>Like many of our innovative hop varieties, the history of Haas is a cross-pollination – a careful combination of people, agronomy, technology and innovation that has resulted in a constantly evolving company to meet the needs of our customers. </p>
+												<p>It all started in 1914 when young man from Britain, born to Austrian-American parents, found himself waiting tables in Nuremberg, Germany. His name was John I. Haas. One of his regular patrons was a mid-sized hop trader by the name of Mr. Bing who saw a spark in John (or John I., as his friends called him).  Mr. Bing’s dream of expanding his hop business into the US would finally come to reality by engaging this energetic young man to do it.  But John I.’s entrepreneurial spirit was too strong to contain and John I. soon realized that he was going to be the master of his own successand founded the company of John I. Haas, Inc. </p>
+											</div>
+											<div class="col-md-6 image-history">
+												<div class="img-his"> <img src="images/blackberry.jpg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="row-padding">
+											<div class="col-md-6">
+												<h3>Perseverance against all odds</h3>
+												<p>1914 was all but a fortunate choice of year to found a company.  It was the beginning of World War I, which was followed by Prohibition and Depression – all not conducive to support a start-up hop business.  But despite all odds, his business grew because of his initiative to look for customers outside the United States. In particular, John I. built strong relationships with Canadian brewers who, not surprisingly, were benefiting greatly from American Prohibition. In 1925, Haas acquired its first hop farm in the Fraser Valley of British Columbia (which eventually grew to 1,300 acres). </p>
+												<p>By 1931, John I. sensed a change in what the world’s brewers were looking for. Up to that time, the most endearing quality of American hops was their low price (based on efficient farming units and strong yields) but their quality was dismal.  John I. set out to change that paradigm by buying a farm in Yakima, Washington and implementing </p>
+											</div>
+											<div class="col-md-6 image-history">
+											<p> a program to reduce the seed content and improve the picking quality of his hops. In addition to his excellent timing (1933 was the repeal of Prohibition), brewers responded so favorably to his quality oriented hop farms (branded as Yakima Golding Farms) that Haas eventually became the largest private hop grower in the world with 25 farms and almost 4,000 acres.</p>
+												<div class="img-his"> <img src="images/prohibition-beyond.jpg" width="293" height="149" alt="">
+												</div>
+												<div class="img-his img-top-margin"> <img src="images/prohibition-beyond2.jpg" width="293" height="149" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="row-padding">
+											<div class="col-md-6">
+												<h3>Haas and Barth. <br>
+												  <em>From competitors to collaborators</em> </h3>
+												  <p>Over the next 40 years, Haas maintained its leadership position in America as it transitioned to the next generation.  Fred Haas took over from John I. in 1964 and continued his quest of delivering quality hops to brewers around the world.  During Fred’s time at the helm of the company, Haas expanded its product portfolio into extracts, which laid the foundation for innovative refined hop products for the next decades.  It was the US processing capabilities of Haas that peeked theinterest of another market leader, namely Joh. Barth & Sohn, Germany, under the leadership of Henry Barth.  As much as Henry Barth and John I. were the fiercest of competitors, Fred Haas was able to find common ground and, having no children of his own, saw a continuation of his company in the hands of the Barth family that started in the hop business already in 1794.</p>
+											  </div>
+											  <div class="col-md-6 image-history">
+											  <p>   The result was that in 1977, John I. Haas became part of the Barth-Haas Group – the world’s leading hops supplier.</p>
+												<div class="haas-bath"> <img src="images/haas-brath.jpg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row">
+										<div class="row-padding">
+											<div class="col-md-6">
+												<h3>Haas Today:<br>
+												  Leading the way into the future</h3>
+												  <p>In the years that followed, Haas maintained our passion for innovation. In the 1980’s, we began the first private hop breeding program in the industry. In the next decade, we introduced the breakthrough hop varieties Chelan and Millennium. And at the beginning of the new century, we partnered with Select Botanicals LLC to create a joint venture called the Hop Breeding Company LLC which created the highly successful varieties Citra®, Mosaic® and Equinox™. Today, the John I. Haas company continues to lead the way. In 2013, Haas opened the Innovations Brewery inside our recently opened Innovations</p>
+												  <p> Center in Yakima, Washington. This 2.5-hectoliter research brewery has the advanced capabilities that allow our brewmasters to work with commercial </p>
+											  </div>
+											  <div class="col-md-6">
+												<p>brewers large and small to develop beer formulations that utilize new hop varieties, hop products and innovative flavor concepts.</p>
+												<p>In 2014, Haas celebrated our 100th anniversary. And while a lot has changed since John I. started his hops business back in 1914, we are certain that if he were alive today, he would see the same obsession with innovation, quality and service for which he set the standard from the very beginning.</p>
+											</div>
+											<div class="col-md-6 image-history">
+												<img src="images/abt-history-logo.png" alt="" class="img-responsive histrory-logo"> </div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div role="tabpanel" class="tab-pane fade find-height" id="abt-fnf">
+								<div class="row">
+									<div class="col-md-5">
+										<h3>Growing, picking and processing your hops</h3>
+										<p>While the John I. Haas company buys many of the hops we sell from high-quality partner growers in the Washington, Oregon and Idaho, we also grow, breed and harvest hops on our own farm in Yakima, Washington.The Yakima Golding Farm is home to 1,600-acres of trellised fields, harvesting facilities, hop kilns and bailing operations. It is also home to some of the most knowledgeable hop agronomy experts who put their education and passion to work in a never-ending drive for quality and efficiency. It’s been that way since John I. pioneered the world’s first seedless hop back on some of these very same fields in 1931. And it remains that way today as our team of oversees the growth of the most sought after hop varieties in the world.  </p>
+									   
+									</div>
+									<div class="col-md-7" id="abt-fnf-image"> <img src="images/abt-fnf-tab-pic.jpg" alt="" class="img-responsive"> </div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade find-height" id="abt-meet">
+
+								<div class="row">
+									<!-- Pop Up -->
+									<div class="green-container">
+										<div class="col-md-4 column photo">
+											<img alt="" src="images/big-img.jpg" />
+										</div>
+										<div class="col-md-8 column">
+											<h3>
+											  Alexander Barth
+											  <em class="sub-text">CEO</em>
+										  </h3>
+										  <p>
+										   Alexander Barth is Chief Executive Officer of John I. Haas, Inc. and partner at Joh. Barth & Sohn, the world’s leading supplier of hop products and related services. The company, founded in 1794, is in its eighth generation of family ownership. Prior to his appointment as CEO, Mr. Barth served as Executive Vice President, Supply Chain Management where he was responsible for expanding the strong, multi-generational grower relationships John I. Haas continues to enjoy in the United States.  Earlier roles included oversight of the company’s significant hop farm production as well as key customer accounts.</p>
+											<p>Mr. Barth holds a Bachelor of Science in General Agriculture from the University of Maryland and a Master of Science in Soil Science from Oregon State University. 
+											</p>
+										   
+											<strong class="sub-text">HERE’S TO THAT MOMENT...</strong>
+										</br>
+										<span class="black-text">Here’s to that moment when our innovations lead to customer innovations.
+
+</br>
+										</span>
+									  
+									</div>
+									<div class="cross-img"><img alt="" class="team-cross" src="images/cross-img.png"> </div>
+								</div>
+
+								<!--End of Pop Up -->
+
+								<ul class="meet-team">
+									<li class="team-member">
+										<a data-toggle='modal' href="javascript:void(0);"><img src="images/m1.jpg" class="member-image" alt="">
+											<span>
+											  <h5 class="member-name">Alexander Barth</h5>
+											  <h6 class="member-designation">CEO</h6>
+										  </span> </a>
+										  
+										  <div class="green-container1">
+										<div class="col-md-4 column photo">
+											<img alt="" src="images/big-img.jpg" />
+										</div>
+										<div class="col-md-8 column">
+											<h3>
+											  Alexander Barth
+											  <em class="sub-text">CEO</em>
+										  </h3>
+										  <p>
+										   Alexander Barth is Chief Executive Officer of John I. Haas, Inc. and partner at Joh. Barth & Sohn, the world’s leading supplier of hop products and related services. The company, founded in 1794, is in its eighth generation of family ownership. Prior to his appointment as CEO, Mr. Barth served as Executive Vice President, Supply Chain Management where he was responsible for expanding the strong, multi-generational grower relationships John I. Haas continues to enjoy in the United States.  Earlier roles included oversight of the company’s significant hop farm production as well as key customer accounts.</p>
+											<p>Mr. Barth holds a Bachelor of Science in General Agriculture from the University of Maryland and a Master of Science in Soil Science from Oregon State University. 
+											</p>
+										   
+											<strong class="sub-text">HERE’S TO THAT MOMENT...</strong>
+										</br>
+										<span class="black-text">Here’s to that moment when our innovations lead to customer innovations.
+
+</br>
+										</span>
+									  
+									</div>
+									<div class="cross-img"><img alt="" class="team-cross" src="images/cross-img.png"> </div>
+								</div>
+									  </li>
+
+									  <li class="team-member">
+										<a href="javascript:void(0);"><img src="images/m2.jpg" class="member-image" alt=""><span>
+										  <h5 class="member-name">Bob Gerst</h5>
+										  <h6 class="member-designation">Head of Human Resources</h6>
+									  </span> </a>
+									  <div class="green-container1">
+										<div class="col-md-4 column photo">
+											<img alt="" src="images/big-img.jpg" />
+										</div>
+										<div class="col-md-8 column">
+											<h3>
+											 Bob Gerst
+											  <em class="sub-text">Director Human Resources</em>
+										  </h3>
+										  <p>Bob is currently head of Human Resources for John I Haas, Inc.  His educational background includes an undergraduate business degree from Luther College and a graduate degree in Industrial and Labor Relations from Loyola University.  Prior to Haas, Bob had been the Vice President of Human Resources at Boyd Gaming and The Venetian Resort Hotel Casino in Las Vegas./p>
+											<p>Bob also worked at Metropolitan Structures and Jones Lang LaSalle, both global firm and has lived and worked in Canada, Asia and Europe.  He has also taught under graduate and graduate level programs, including courses at Benedictine University, the College of Southern Nevada and DeVry Institute.  He is active in the community in several organizations including the Chamber of Commerce, Rotary and the Dispute Resolution Center. 
+											</p>
+										   
+											<strong class="sub-text">HERE’S TO THAT MOMENT...</strong>
+										</br>
+										<span class="black-text">when I’m met with a smile by everyone from Alex to the hop pickers. That’s when I know I’m doing my job.
+
+</br>
+										</span>
+									  
+									</div>
+									<div class="cross-img"><img alt="" class="team-cross" src="images/cross-img.png"> </div>
+								</div>
+								  </li>
+								  <li class="team-member">
+									<a href="javascript:void(0);"><img src="images/m3.jpg" class="member-image" alt=""><span>
+									  <h5 class="member-name">David Thurston</h5>
+									  <h6 class="member-designation">VO, Sales &amp; Marketing</h6>
+								  </span> </a>
+								   <div class="green-container1">
+										<div class="col-md-4 column photo">
+											<img alt="" src="images/big-img.jpg" />
+										</div>
+										<div class="col-md-8 column">
+											<h3>
+											 David Thurston
+											  <em class="sub-text">V.P. Sales and Marketing</em>
+										  </h3>
+										  <p>David Thurston joined John I. Haas in April of 2012 and oversees all sales and marketing activity for the company.  In addition to his responsibilities at Haas, Thurston is a member of the Haas Leadership Team and the Barth Haas Group Sales and Marketing Leadership Team.  
+/p>
+											<p>Prior to joining Haas, Thurston worked for Cargill, Inc., holding various positions in Sales and Marketing, Strategy and General Management over a 25-year career in grain processing , meat processing and biotech businesses.		
+											</p>
+											<p>Thurston is a graduate of University of Denver and has an MBA from the Fuqua School of Business at Duke University. </p>
+										   
+											<strong class="sub-text">HERE’S TO THAT MOMENT...</strong>
+										</br>
+										<span class="black-text">when a brewer realizes we know beer as well as we know hops.
+
+</br>
+										</span>
+									  
+									</div>
+									<div class="cross-img"><img alt="" class="team-cross" src="images/cross-img.png"> </div>
+								</div>
+							  </li>
+							  <li class="team-member">
+								<a href="javascript:void(0);"><img src="images/m4.jpg" class="member-image" alt=""><span>
+								  <h5 class="member-name">Jason Simpson</h5>
+								  <h6 class="member-designation">Director of Manufacturing</h6>
+							  </span> </a>
+							   <div class="green-container1">
+										<div class="col-md-4 column photo">
+											<img alt="" src="images/big-img.jpg" />
+										</div>
+										<div class="col-md-8 column">
+											<h3>
+											 Jason R. Simpson
+											  <em class="sub-text">Director Manufacturing</em>
+										  </h3>
+										  <p>Jason Simpson joined John I. Haas in June of 2014 and oversees all manufacturing, warehousing and logistics operations for the company.  In addition to his daily responsibilities, Jason is a member of the Haas Leadership Team and is actively involved in various community volunteer activities, including a Board position for the Greater Yakima Chamber of Commerce.
+/p>
+											<p>Prior to joining Haas, Jason’s 21-year career included progressive positions across all operational facets of manufacturing organizations.  These positions span large multi-national companies such as Nestle Water, Ste. Michelle Wine Estates, Safeway and Tree Top.		
+											</p>
+											<p>Jason is a Texas A&M University graduate from the school of Engineering and has an MBA from Stephen F. Austin State University.  </p>
+										   
+											<strong class="sub-text">HERE’S TO THAT MOMENT...</strong>
+										</br>
+										<span class="black-text">when every machine, warehouse and process is running like clockwork.
+
+</br>
+										</span>
+									  
+									</div>
+									<div class="cross-img"><img alt="" class="team-cross" src="images/cross-img.png"> </div>
+								</div>
+						  </li>
+						  <li class="team-member">
+							<a href="javascript:void(0);"><img src="images/m5.jpg" class="member-image" alt=""><span>
+							  <h5 class="member-name">Pete Mahony</h5>
+							  <h6 class="member-designation">Director Supply Chain Management and Purchasing</h6>
+						  </span> </a>
+						  <div class="green-container1">
+										<div class="col-md-4 column photo">
+											<img alt="" src="images/big-img.jpg" />
+										</div>
+										<div class="col-md-8 column">
+											<h3>
+											 Pete Mahony
+											  <em class="sub-text">Director Manufacturing</em>
+										  </h3>
+										  <p>Pete Mahony has been Director of Supply Chain Management and Purchasing at Haas since 2012. But hops have been a part of Pete’s life for much longer than that. Pete grew up in the hop growing area of St. Paul, Oregon and worked for a hop grower during summers while attending Oregon State University.  In 1987 he began working for John Barth & Sohn in Hubbard, Oregon as a hop buyer and also as a plant manager for Westnut in Dundee, an affiliate company of Haas involved in hazelnut products.  In 1994 Pete moved to Yakima to work at the John I. Hass Extract Plant as an assistant to Jim Stoffer, VP of Operations.  When Jim retired in 2000, Pete moved up to a managerial position and continued in that role until being promoted to his current position. Pete also oversees the farming and hop purchasing areas of John I. Haas. 
+									 </p>
+											
+										   
+											<strong class="sub-text">HERE’S TO THAT MOMENT...</strong>
+										</br>
+										<span class="black-text">when everyone has what they need, when they need it.
+
+</br>
+										</span>
+									  
+									</div>
+									<div class="cross-img"><img alt="" class="team-cross" src="images/cross-img.png"> </div>
+								</div>
+					  </li>
+					  <li class="team-member">
+						<a href="javascript:void(0);"><img src="images/m6.jpg" class="member-image" alt=""><span>
+						  <h5 class="member-name">Tom Davis</h5>
+						  <h6 class="member-designation">Chief Financial Officer</h6>
+					  </span> </a>
+					  <div class="green-container1">
+										<div class="col-md-4 column photo">
+											<img alt="" src="images/big-img.jpg" />
+										</div>
+										<div class="col-md-8 column">
+											<h3>
+											 Tom Davis
+											  <em class="sub-text">CFO</em>
+										  </h3>
+										  <p>Tom Davis has served as John I. Haas’s Chief Financial Officer since 2004.  Mr. Davis has ultimate responsibility over all finance, information technology, human resource and legal functions.</p>
+											<p>Prior to joining Haas, Mr. Davis held several senior finance and accounting positions including CFO of Xybernaut Corporation where he helped achieve record corporate revenues and earnings, and an increased stock price.  As Director of Finance at MeriStar Hospitality Corporation, he was active in the company’s initial public offering and played a key role in raising $3 billion through debt and equity financings.  Mr. Davis began his career as an auditor at Deloitte & Touche.		
+											</p>
+											<p>Mr. Davis is a Certified Public Accountant and graduated with honors from James Madison University (B.B.A. 1991).  He serves as a Trustee for the Oregon College of Art and Craft.  </p>
+										   
+											<strong class="sub-text">HERE’S TO THAT MOMENT...</strong>
+										</br>
+										<span class="black-text">when money never gets in the way of innovation.</br>
+										</span>
+									  
+									</div>
+									<div class="cross-img"><img alt="" class="team-cross" src="images/cross-img.png"> </div>
+								</div>
+				  </li>
+				  <li class="team-member">
+					<a href="javascript:void(0);"><img src="images/m7.jpg" class="member-image" alt=""><span>
+					  <h5 class="member-name">Stephanie Conrad</h5>
+					  <h6 class="member-designation">Controller</h6>
+				  </span> </a>
+				  <div class="green-container1">
+										<div class="col-md-4 column photo">
+											<img alt="" src="images/big-img.jpg" />
+										</div>
+										<div class="col-md-8 column">
+											<h3>
+											Stephanie Conrad
+											  <em class="sub-text">Controller (Accounting and Administration)</em>
+										  </h3>
+										  <p>As our Corporate Controller, Stephanie oversees all accounting, analysis and office administration functions for Haas as well as our various joint ventures and U.S. affiliates. In her analysis role, Stephanie draws upon her 25 years of hops experience to ensure the Company’s strategies and activities are on solid financial footing. Stephanie has lived in the Yakima Valley for 35 years and has been with Haas since she graduated from Washington State University in 1990 with a BA in Accounting. She is also a licensed Certified Public Accountant.		
+											</p>
+											
+											<strong class="sub-text">HERE’S TO THAT MOMENT...</strong>
+										</br>
+										<span class="black-text">when all business decisions are financially sound.
+
+</br>
+										</span>
+									  
+									</div>
+									<div class="cross-img"><img alt="" class="team-cross" src="images/cross-img.png"> </div>
+								</div>
+			  </li>
+			  <li class="team-member">
+				<a href="javascript:void(0);"><img src="images/m8.jpg" class="member-image" alt=""><span>
+				  <h5 class="member-name">Scott Garden</h5>
+				  <h6 class="member-designation">Technical Director</h6>
+			  </span> </a>
+			  <div class="green-container1">
+										<div class="col-md-4 column photo">
+											<img alt="" src="images/big-img.jpg" />
+										</div>
+										<div class="col-md-8 column">
+											<h3>
+											Scott Garden
+											  <em class="sub-text">Technical Director</em>
+										  </h3>
+										  <p>Scott, a native of Canada, has been Technical Director of Haas since 2007 and is responsible for the Company’s quality, R&D and brewing programs. He attended the University of Alberta where he received two Bachelor degrees and a Ph.D. in Food Chemistry. He also has an MBA from the University of Washington.
+/p>
+											<p>Scott began his career in the brewing and malting industry in 1994 as a postdoctoral scientist with Canadian Malting.  While at Canadian Malting he worked on various R&D projects related to malt quality.  Scott joined Haas in 1999 in the role of Technical Projects Leader. During his tenure here, he has been involved in various technical and business development projects including the development of the Company’s quality, environmental and food safety management systems		
+											</p>
+																					 
+											<strong class="sub-text">HERE’S TO THAT MOMENT...</strong>
+										</br>
+										<span class="black-text">when hop chemistry + brewing process = [wow]2
+
+</br>
+										</span>
+									  
+									</div>
+									<div class="cross-img"><img alt="" class="team-cross" src="images/cross-img.png"> </div>
+								</div>
+		  </li>
+	  </ul>
+
+  </div>
+
+</div>
+</div>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist" id="about-tab-mobile">
+	<li role="presentation" class="active tab-reset-overview" id="abt-over-tab"><a href="#abt-over" aria-controls="abt-over" role="tab" data-toggle="tab">Overview</a> </li>
+	<li role="presentation" class="tab-reset-overview"><a href="#abt-history" aria-controls="abt-history" role="tab" data-toggle="tab">History</a> </li>
+	<li role="presentation" class="tab-reset-overview"><a href="#abt-fnf" aria-controls="abt-fnf" role="tab" data-toggle="tab">Facilities &amp; Fields</a> </li>
+	<li role="presentation" class="tab-reset-overview"><a href="#abt-meet" aria-controls="abt-meet" role="tab" data-toggle="tab">Meet Our Team</a> </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="variety" data-speed="1" data-type="background" data-identity="variety">
+	<div class="container">
+		<div class="row variety-box">
+			<h2 class="sec-title">VARIETIES</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<h3>126 varieties. Unlimited possibilities.</h3>
+						<p>Great beer begins with great hops. That’s not telling you anything you don’t know. But what you may not know is that Haas can supply you with just about every type of hop from anywhere in the world. Whether you’re looking for the freshest alphas or the most intriguing aromas, Haas is your source. Use the box to browse our varieties. They’re arranged alphabetically, but you can also filter by geography.  </p>
+						
+					</div>
+					<div class="col-md-6">
+						<div class="sort-bt-variety">
+							<div class="sort-var-sel">
+								<select class="styled" name="var-sel">
+									<option selected>SORT HOPS BY ALPHABETICAL</option>
+									<option>SORT HOPS BY REGION</option>
+								</select>
+							</div>
+							<div class="var-sort-list">
+								<ul>
+									<li>
+										<h6>Admiral</h6>
+										<a href="varietiesbycountry-pdfs/UK/Admiral.pdf" download>DOWNLOAD PDF</a> </li>
+										<li>
+											<h6>Agnus</h6>
+											<a href="varietiesbycountry-pdfs/Czech Republic/Agnus.pdf" download>DOWNLOAD PDF</a> </li>
+											<li>
+												<h6>Ahtanum</h6>
+												<a href="varietiesbycountry-pdfs/USA/Ahtanum.pdf" download>DOWNLOAD PDF</a> </li>
+												<li>
+													<h6>Amarillo</h6>
+													<a href="varietiesbycountry-pdfs/USA/Amarillo.pdf" download>DOWNLOAD PDF</a> </li>
+													<li>
+														<h6>Apollo</h6>
+														<a href="varietiesbycountry-pdfs/USA/Apollo.pdf" download>DOWNLOAD PDF</a> </li>
+														<li>
+															<h6>Aramis</h6>
+															<a href="varietiesbycountry-pdfs/France/Aramis.pdf" download>DOWNLOAD PDF</a> </li>
+															<li>
+															
+															<h6>Aurora</h6>
+															<a href="varietiesbycountry-pdfs/Slovenia/Aurora.pdf" download>DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Boadicea</h6>
+															<a href="varietiesbycountry-pdfs/UK/Boadicea.pdf" download>DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Bobek</h6>
+															<a href="varietiesbycountry-pdfs/Slovenia/Bobek.pdf" download>DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Bohemie</h6>
+															<a href="varietiesbycountry-pdfs/Slovenia/Bobek.pdf" download>DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Bor</h6>
+															<a href="varietiesbycountry-pdfs/Czech Republic/Bor.pdf" download>DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Bramling Cross</h6>
+															<a href="varietiesbycountry-pdfs/UK/Bramling Cross.pdf" download>DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Bravo</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Brewers Gold</h6>
+															<a href="varietiesbycountry-pdfs/UK/Brewers Gold.pdf">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Calypso</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Cascade</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Celeia</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Centennial</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Chelan</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Chinook</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Citra</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Cluster</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Columbus</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Comet</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Crystal</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															  <li>
+															<h6>Delta </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															  <li>
+															<h6>EKG</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Ella </h6>
+															<a href="varietiesbycountry-pdfs/Australia/Ella.pdf" download>DOWNLOAD PDF</a> </li>  <li>
+															<h6>Endeavour </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Equinox </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Extra Styrian Dana</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>First Gold</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Fuggle</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Galaxy</h6>
+															<a href="varietiesbycountry-pdfs/Australia/Galaxy.pdf" download>DOWNLOAD PDF</a> </li>  <li>
+															<h6>Galena </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Glacier </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															  <li>
+															<h6>Hallertau Blanc </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															  <li>
+															<h6>Hallertau Mittelfrueh </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Harmonie </h6>
+															<a  href="varietiesbycountry-pdfs/Czech Republic/Harmonie.pdf"  download>DOWNLOAD PDF</a> </li>  <li>
+															<h6>Helga </h6>
+															<a href="varietiesbycountry-pdfs/Australia/Helga.pdf" download>DOWNLOAD PDF</a> </li>  <li>
+															<h6>Herkules</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Hersbrucker</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Horizon </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6> Huell Melon</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Junga </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Kazbek </h6>
+															<a href="varietiesbycountry-pdfs/Czech Republic/Kazbek.pdf" download>DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Liberty </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															  <li>
+															<h6>Limbus </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															  <li>
+															<h6>Lomik </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Lublin </h6>
+														   
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Magnat </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Magnum </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Mandarina Bavaria </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Marco Polo </h6>
+															<a href="varietiesbycountry-pdfs/China/Marco Polo.pdf" download>DOWNLOAD PDF</a> </li>  <li>
+															<h6>Marynka. </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Merkur </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Millennium </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															  <li>
+															<h6>Mosaic </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															  <li>
+															<h6>Motueka </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Mount Hood </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Nelson Sauvin</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>New Zealand Hallertau</h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Newport </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Northdown </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Northern Brewer </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Nugget </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Oktawia </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Opal </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															  <li>
+															<h6>Pacific Gem </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															  <li>
+															<h6>Pacific Jade </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Pacific Sunrise </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Pacifica </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Palisade </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Perle </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Pilgrim </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Pilot </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Pioneer </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Polaris </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>
+															<li>
+															<h6>Premiant </h6>
+															<a href="varietiesbycountry-pdfs/Czech Republic/Premiant.pdf" download>DOWNLOAD PDF</a> </li>
+															  <li>
+															<h6>Pride of Ringwood </h6>
+															<a href="varietiesbycountry-pdfs/Australia/Pride of Ringwood.pdf" download>DOWNLOAD PDF</a> </li>
+															  <li>
+															<h6>Progress </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Pulawski </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Riwaka </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Rubin </h6>
+															<a href="varietiesbycountry-pdfs/Czech Republic/Rubin.pdf" download>DOWNLOAD PDF</a> </li>  <li>
+															<h6>Saaz Late </h6>
+															<a href="varietiesbycountry-pdfs/Czech Republic/Saaz Late.pdf" download>DOWNLOAD PDF</a> </li>  <li>
+															<h6>Saaz</h6>
+															<a href="varietiesbycountry-pdfs/Czech Republic/Saaz.pdf" download>DOWNLOAD PDF</a> </li>  <li>
+															<h6>Santiam </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<h6>Saphir </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<li><h6>Simcoe </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															<li><h6>Simcoe </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															 <li> <h6>Sladek  </h6>
+															<a href="varietiesbycountry-pdfs/Czech Republic/Sladek.pdf" download>DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Smaragd  </h6>
+															  <a href="#">DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Sorachi Ace  </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Southern Brewer  </h6>
+															  <a href="#">DOWNLOAD PDF</a> </li>  <li>
+															   <h6>Southern Dawn  </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Southern Promise  </h6>
+															  <a href="#">DOWNLOAD PDF</a> </li>  <li>
+															   <h6>Southern Star  </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Sovereign  </h6>
+															  <a href="#">DOWNLOAD PDF</a></li>  <li>
+															
+															 <h6>Spalt Spalter  </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Spalter Select  </h6>
+															  <a href="#">DOWNLOAD PDF</a> </li>  <li>
+															   <h6>Sterling  </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Strisselspalt  </h6>
+															  <a href="varietiesbycountry-pdfs/France/Strisselspalt.pdf" download>DOWNLOAD PDF</a> </li>  <li>
+															   <h6>Styrian Gold  </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															  <h6> Styrian Savinjski Golding </h6>
+															  <a href="#">DOWNLOAD PDF</a> </li>  <li>
+															   <h6>Summer  </h6>
+															<a href="varietiesbycountry-pdfs/Australia/Summer.pdf" download>DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Summit  </h6>
+															  <a href="#">DOWNLOAD PDF</a> </li>  <li>
+															   <h6>Super Galena  </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Super Pride  </h6>
+															  <a href="varietiesbycountry-pdfs/Australia/Super Pride.pdf" download>DOWNLOAD PDF</a></li>  <li>
+															  <h6>Sybilla  </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Sylva</h6>
+															  <a href="varietiesbycountry-pdfs/Australia/Sylva.pdf" download>DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Target  </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															 
+															  <h6>Taurus  </h6>
+															  <a href="#">DOWNLOAD PDF</a> </li>  <li>
+															   <h6>Tomahawk  </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Tettnanger  </h6>
+															  <a href="#">DOWNLOAD PDF</a> </li>  <li>
+															   <h6>Topaz  </h6>
+															<a href="varietiesbycountry-pdfs/Australia/Topaz.pdf" download>DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Tradition  </h6>
+															  <a href="#">DOWNLOAD PDF</a> </li>  <li>
+															   <h6>Triskel.  </h6>
+															<a href="varietiesbycountry-pdfs/France/Triskel.pdf" download>DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Tsingdao Flower  </h6>
+															  <a href="varietiesbycountry-pdfs/China/Tsingdao Flower.pdf" download>DOWNLOAD PDF</a> </li>  <li>
+															   <h6>Ultra  </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Vanguard  </h6>
+															  <a href="#">DOWNLOAD PDF</a> </li>  <li>
+															   <h6>Warrior  </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Whitbread Golding  </h6>
+															  <a href="#">DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Willamette  </h6>
+															  <a href="#">DOWNLOAD PDF</a> </li>  <li>
+															   <h6>Wye Challenger  </h6>
+															<a href="#">DOWNLOAD PDF</a> </li>  <li>
+															  <h6> Zbyszko															
+																</h6>
+															  <a href="#">DOWNLOAD PDF</a> </li>  <li>
+															   <h6>Zeus  </h6>
+															<a href="varietiesbycountry-pdfs/USA/Zeus.pdf">DOWNLOAD PDF</a> </li>  <li>
+															  <h6>Zula  </h6>
+															  <a href="varietiesbycountry-pdfs/Poland/Zula.pdf">DOWNLOAD PDF</a> </li>  <li>																												 </ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section id="product" data-speed="4" data-type="background" data-identity="product">
+								<div class="container">
+									<div class="row  product-box" id="product-div">
+										<h2 class="sec-title">Products</h2>
+										<div class="product-block-main">
+											<div class="product-main-text">
+												<h3>Hop products that flavor your beer. And feed your imagination.</h3>
+												<p>Beer is all about flavor. And flavor is all about hops. So whatever flavor you’re trying to create, Haas has the hop products to help make it happen. From classic forms of whole hop cones, hop pellets and CO2 extracts to our more advanced, innovative hop products that add specific flavor and functionality, Haas has it all. 
+												</p>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="pro-box" id="product-classic">
+														<div class="pro-img"> <img src="images/product-logo.png" alt="">
+															<h3><strong>CLASSIC</strong><br>
+															  PRODUCTS</h3>
+														  </div>
+														  <div class="pro-text">
+															<p>Some of the most cutting-edge brews start with classic hops. After all, it’s where the bitterness and aroma are derived. That’s why Haas is committed to providing brewers with the hop products you need in the form that works best for your brewing style. Between our classic hop products and your innovative recipes, there’s no limit to the flavors you can create. <br>
+																<br></p>
+																<a href="javascript:void(0);" class="readmore-green product-classic">MORE INFORMATION</a>
+
+															</div>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="pro-box" id="product-advance">
+															<div class="pro-img"> <img src="images/star-logo-img.png" alt="">
+																<h3><strong>ADVANCED</strong><br>
+																  PRODUCTS</h3>
+															  </div>
+															  <div class="pro-text">
+																<p>When you obsess about beer as much as we do, you come up with ways to more precisely control bitterness, aroma, flavor, light-stability – even foam and cling performance. We accomplish this through the separation of the various components of whole hops. The result is our advanced hop products that separate and accentuate the best part of the hop in an efficient, user-friendly form.<br>
+																	<br></p>
+																	<a href="javascript:void(0);" class="readmore-green product-advance">MORE INFORMATION</a>
+
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="product-block opacity" id="classic-product">
+												<div class="product-block-inner">
+													<div class="col-md-3">
+														<div class="pro-logo"> <img src="images/product-logo.png" alt="">
+															<h3><strong>CLASSIC</strong><br>
+															  PRODUCTS</h3>
+														  </div>
+													  </div>
+													  <div class="col-md-9">
+														<div class="product-list">
+															<ul>
+																<li class="pro-list-head">
+																	<h5>Raw Hops</h5>
+																</li>
+																<li>
+																	<h6>Bales/Vacuum packs</h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+																<li class="pro-list-head">
+																	<h5>Pellets</h5>
+																</li>
+																<li>
+																	<h6>Pellets Type 90</h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+																<li>
+																	<h6>Pellets Type 45</h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+																<li class="pro-list-head">
+																	<h5>Extracts</h5>
+																</li>
+																<li>
+																	<h6>CO2 Hop Extract</h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+																<li>
+																	<h6>Standardized CO2 Hop Extract</h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+																<li>
+																	<h6>CO2 Hop Extract (Oil enriched)</h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+																<li>
+																	<h6>Lorem ipsum se meloria</h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+																<li>
+																	<h6>Meloria lorem ipsum se </h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="cross-img"><img src="images/cross-img.png" alt=""> </div>
+												</div>
+											</div>
+											<div class="product-block opacity" id="advance-product">
+												<div class="product-block-inner">
+													<div class="col-md-3">
+														<div class="pro-logo"> <img src="images/star-logo-img.png" alt="">
+															<h3><strong>ADVANCED</strong><br>
+															  PRODUCTS</h3>
+														  </div>
+													  </div>
+													  <div class="col-md-9">
+														<div class="product-list">
+															<ul>
+																<li class="pro-list-head">
+																	<h5>Raw Hops</h5>
+																</li>
+																<li>
+																	<h6>Bales/Vacuum packs</h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+																<li class="pro-list-head">
+																	<h5>Pellets</h5>
+																</li>
+																<li>
+																	<h6>Pellets Type 90</h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+																<li>
+																	<h6>Pellets Type 45</h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+																<li class="pro-list-head">
+																	<h5>Extracts</h5>
+																</li>
+																<li>
+																	<h6>CO2 Hop Extract</h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+																<li>
+																	<h6>Standardized CO2 Hop Extract</h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+																<li>
+																	<h6>CO2 Hop Extract (Oil enriched)</h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+																<li>
+																	<h6>Lorem ipsum se meloria</h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+																<li>
+																	<h6>Meloria lorem ipsum se </h6>
+																	<ul class="pro-down">
+																		<li>DOWNLOADS:</li>
+																		<li><a href="#">TECH SPECS</a> </li>
+																		<li><a href="#">SAFETY INFO</a> </li>
+																	</ul>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="cross-img"><img src="images/cross-img.png" alt=""> </div>
+												</div>
+											</div>
+										</div>
+
+									</section>
+									<section id="resource" data-speed="4" data-type="background" data-identity="resource">
+										<div class="container">
+											<div class="row">
+												<h2 class="sec-title" id="resource-menu-nav">RESOURCES</h2>
+												<div class="resource-block">
+													<h2>Innovation, Inspiration and Collaboration</h2>
+													<div class="resources-tab">
+														<div role="tabpanel">
+
+															<!-- Nav tabs -->
+															<ul class="nav nav-tabs" role="tablist" id="resource-mob-tab">
+																<li role="presentation" class="active"><a id="innovate" href="#inno-bre" aria-controls="inno-bre" role="tab" data-toggle="tab">Innovations Brewery</a> </li>
+																<li role="presentation"><a id="hop" href="#hop-acd" aria-controls="hop-acd" role="tab" data-toggle="tab">HOPS Academy</a> </li>
+																<li role="presentation"><a id="oth" href="#oth-res" aria-controls="oth-res" role="tab" data-toggle="tab">Other Resources</a> </li>
+															</ul>
+
+															<!-- Tab panes -->
+															<div class="tab-content">
+																<div role="tabpanel" class="tab-pane fade in active other-height resource-tab" id="inno-bre" style="min-height:470px;">
+																	<div class="row inno-bre-block">
+																		<ul class="bxslider2">
+																			<li>
+
+																				<div class="col-md-5">
+																					<div class="inno-list">
+																						<h4>Creativity, meet repeatability, flexibility and scalability.</h4>
+																						<P>From the one of the companiesbehind the HBC varieties Citra® and Mosaic® comes another advancement in creative brewing — the Haas Innovations Brewery, a world-class brewing and research facility in Yakima, Washington that gives you the ability to try out new hops, new products, new recipes and new visions in a totally controllable, repeatable and creative environment. Creating new and commercially successful beers requires access to a brewing facility that provides repeatable, flexible and scalable brewing capabilities. And that’s exactly what you get with the Innovations Brewery. </br> <strong><a href="#">READ MORE</a></strong>
+																						</P>
+																					</div>
+																				</div>
+																				<div class="col-md-7">
+																					<div class="rep-img"> <img src="images/creativ-img.jpg" class="img-responsive" alt="">
+																					</div>
+																				</div>
+
+																			</li>
+
+
+
+
+
+																			<li>
+
+																				<div class="col-md-6">
+																					<div class="inno-list">
+																						<h4>Imagine what you could brew.</h4>
+																						<P>At Haas, we celebrate the passion and creativity of those dedicated to brewing great beer. And our research brewery is one of the ways we help that creativity happen. It starts with our sophisticated, state-of-the-art equipment and control system that allows you to refine a recipe and repeat it batch after batch. Next comes flexibility — the key to innovation. The Haas Innovations Brewery offers you a highly controlled, scientific environment in which to brew, test and adjust your recipes to get the perfect brew. Finally, there’s scalability. Our research brewery provides an unparalleled scalable brewing experience, which means you can reduce the time and uncertainty often associated with new brews and get your next brewing creation to market faster and more efficiently. </P>
+																					</div>
+																				</div>
+																				<div class="col-md-6">
+																					<div class="rep-img"><img src="images/innov-panal2.jpg" class="img-responsive" alt="">
+																					</div>
+																				</div>
+
+																			</li>
+																			<li>
+
+																				<div class="col-md-6">
+																					<div class="inno-list">
+																						<h4>Here’s to Your Success</h4>
+																						<P>At Haas, our mission is your success. Whether you’re looking totest one of our new varieties or one of your latest recipes, the Haas Innovations Brewery will help you achieve it. The Haas research brewery also allows you to test our new products and see how we can deliver the same great flavors you seek without having to use as many hops (or dollars, for that matter). In addition to giving you a place to brew, our research brewery includes a state-of-the-art laboratory that gives you the advantage of the latest hop and beer analysis technology. You also get the experience and expertise of our technical staff and brewmaster Virgil McDonald who help you get the most out of the product development process. To learn more or to reserve a brewing session, call 509-469-4000. And get ready to test, tweak, taste and toast your next great brew. </P>
+																					</div>
+																				</div>
+																				<div class="col-md-6">
+																					<div class="rep-img"><img src="images/panel2.jpg" class="img-responsive" alt="">
+																					</div>
+																				</div>
+
+																			</li>
+
+																			<li>
+
+																				<div class="col-md-7">
+																					<div class="inno-list">
+																						<h4>Innovations Brewery Features:</h4>
+																						<ul>
+																							<li><em>2.5 hl 5 vessel state-of-the-art brew house with 10 and 30 liter hop dosing vessels</em> </li>
+																							<li><em>A brew house control system with customizable recipe and extensive data collection</em> </li>
+																							<li><em>21 unitank fermentation and conditioning system capable of 1.25 and 2.5 hl brews</em> </li>
+																							<li><em>Beer filtration capabilities including diatomaceous earth and depth filter</em> </li>
+																							<li><em>Krones bottling system with double pre-evacuation & CO2 pressurization</em> </li>
+																							<li><em>Precision malt milling (4 roll) and adjunct preparation</em> </li>
+																							<li><em>Laboratory analysis for hops and beer</em> </li>
+																						</ul>
+																					</div>
+																				</div>
+																				<div class="col-md-5">
+																					<div class="rep-img"> <img src="images/inno-pic.jpg" class="img-responsive" alt=""> </div>
+																				</div>
+
+																			</li>
+																		</ul>
+																	</div>
+
+																</div>
+																<div role="tabpanel" class="tab-pane fade other-height resource-tab" id="hop-acd" style="min-height:470px;">
+																	<div class="row inno-bre-block">
+																		<div class="col-md-5">
+																			<div class="hop-acd-text">
+																				<h4>Hops. There’s more<br>
+																					than meets the nose. </h4>
+																					<p>It seems like the more you know about hops, the more there is to learn. That’s the thinking behind the Barth-Haas Hops Academy — a formal training program for brewers designed to open up a world of possibilities in the use, effects, and impact of this special brewing ingredient. In addition to helping brewers develop distinctive high-quality beers, the Hops Academy helps you improve process efficiencies and reduce waste. </p>
+																					<p>The Hops Academy helps both new, experienced and even master brewers understand more about the complexities of hops and the way they interact with each other — as well as other beer ingredients — to create unique styles, flavors and aromas. To learn more about the Barth-Haas Hops Academy or to reserve a spot in an upcoming session, please visit  <a href="http://www.hopsacademy.com/en" target="_blank">http://www.hopsacademy.com/en</a> </p>
+																				</div>
+																			</div>
+																			<div class="col-md-7">
+																				<div class="rep-img"> <img src="images/hops-pic.jpg" class="img-responsive" alt="" > </div>
+																			</div>
+																		</div>
+																	</div>
+																	<div role="tabpanel" class="tab-pane fade other-height resource-tab" id="oth-res" style="min-height:470px;">
+																		<div class="row other-res-block">
+																			<ul class="other">
+																				<li>
+																					<div class="col-md-6">
+																						<div class="other-res-block">
+																							<div class="other-rec-logo">
+																								<a href="http://www.barthhaasgroup.com/de/" target="_blank"><img src="images/barth-logo.jpg" class="img-responsive" alt="">
+																								</a>
+																							</div>
+																							<h4>Barth-Haas Group</h4>
+																							<p>Barth-Haas Group is the world’s largest supplier of hop products and services.  The group is family owned and is active on all continents, having offices and operations in Germany, the United States, United Kingdom, Australia and China.  Haas is a proud member of the Barth-Haas Group.<br>
+																						  <a href="http://www.BarthHaasGroup.com" target="_blank">http://www.BarthHaasGroup.com</a></p>
+																						</div>
+																					</div>
+																				</li>
+																				<li>
+																					<div class="col-md-6">
+																						<div class="other-res-block">
+																							<div class="other-rec-logo">
+																								<a href="http://www.asbcnet.org/Pages/default.aspx" target="_blank"><img src="images/asbc-logo.jpg" alt="">
+																								</a>
+																							</div>
+																						   <h4>American Society of Brewing Chemists</h4>
+																							<p>The American Society of Brewing Chemists in an internationally recognized nonprofit scientific organization founded in 1934 to improve and bring uniformity to the brewing industry on a technical level. Today, ASBC is represented by individual and corporate members worldwide representing large and small brewers, consultants, government agencies, academics, distillers, vintners and those working in allied industries.<br>
+<a href="http://www.asbcnet.org" target="_blank">http://www.asbcnet.org</a>
+</p>
+																						</div>
+																					</div>
+																				</li>
+																				<li>
+																					<div class="col-md-6">
+																						<div class="other-res-block">
+																							<div class="other-rec-logo">
+																								<a href="http://www.mbaa.com" target="_blank"> <img src="images/mbaa.jpg" class="img-responsive" alt=""> </a>
+																							</div>
+																							<h4>Master Brewers Association of the Americas</h4>
+																							<p>The Master Brewers Association of the Americas (MBAA) is a nonprofit professional, scientific organization dedicated to advance, support, and encourage scientific research into brewing malt beverages and related industries and to make that research available to the public through conventions, discussion groups, journals, publications and seminars.<br>
+																						  <a href="http://www.mbaa.com" target="_blank">http://www.mbaa.com</a></p>
+																						</div>
+																					</div>
+																				</li>
+																				<li>
+																					<div class="col-md-6">
+																						<div class="other-res-block">
+																							<div class="other-rec-logo">
+																								<a href="http://www.asbcnet.org/Pages/default.aspx"> <img src="images/osulogo.jpg" class="img-responsive" alt="">
+																								</a>
+																							</div>
+																							<h4>Oregon State University</h4>
+																							<p>Haas works closely in association with the Food Science and Technology section of the Oregon State University College of Agricultural Sciences.  Dr. Tom Shellhammer leads the OSU work in brewing science and technologies related to beer production and quality, in particular hop chemistry, flavor and quality.  His program is globally recognized for its efforts and achievements. <br>
+<br>
+<a href="http://oregonstate.edu/foodsci/" target="_blank">http://oregonstate.edu/foodsci/</a><br>
+<a href="http://live.oregonstate.edu/video/fermentation-science-oregon-state-university" target="_blank">http://live.oregonstate.edu/video/fermentation-science-oregon-state-university</a>
+</p>
+																						</div>
+																					</div>
+																				</li>
+																				<li>
+																					<div class="col-md-6">
+																						<div class="other-res-block">
+																							<div class="other-rec-logo">
+																								<a href="http://www.barthhaasgroup.com/de/"> <img src="images/usahops.jpg" class="img-responsive" alt=""> </a>
+																							</div>
+																							<h4>Hop Growers of America</h4>
+																							<p>Hop Growers of America is a non-profit association that represents and promotes the interests of U.S. growers both domestically and internationally. As the national organization, HGA provides support, coordination and communication to growers, brewers and the world hop industry in areas of common interest, including; marketing statistics, promotion, education, and research.  <br>
+																						  <a href="http://www.usahops.org" target="_blank">http://www.usahops.org</a></p>
+																						</div>
+																					</div>
+																				</li>
+																				<li>
+																					<div class="col-md-6">
+																						<div class="other-res-block">
+																							
+																						</div>
+																					</div>
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+										<section id="partner" data-speed="1" data-type="background" data-identity="partner">
+											<div class="container">
+												<div class="row  par-row">
+													<h2 class="sec-title">PARTNERS</h2>
+													<div class="partner-block">
+														<h3>Haas. Where brewing is a team sport</h3>
+														<div class="row">
+															<div class="col-md-4">
+																<div class="par-img">
+																	<a href="http://www.hopbreeding.com/" target="_blank"> <img src="images/p1.jpg" alt="">
+																	</a>
+																</div>
+															  
+																<p>
+																<strong>This is where new beer flavors are born </strong><br>
+
+																Citra®, Mosaic®, and Equinox® — we all recognize these names as the hops behind (or, more accurately, inside) some of craft brewing’s most well known beers. But what you may not know is that these varieties were created from scratch by the Hops Breeding Company LLC, a joint venture between Haas and Select Botanicals LLC....  </p>
+																<p class="read-more-data">Coming up with new aromas and flavors is a big part of what Haas contributes to the world brewing community. And one of the key contributors to these creations is our long-time master hop breeder, Gene Probasco. Gene and his agronomic team oversee more than 30 acres of experimental hops just waiting to be discovered.  The Hop Breeding Company conducts about 50 crosses of male and female hop parents each year, resulting in more than 20,000 offspring, all potentially becoming a commercial variety someday in the future.  While only a handful make it to an elite status and get christened with a name instead of a number, Gene and the Hop Breeding Company are proud parents who will stop at nothing for the good of their offspring.... </p><a href="javascript:void(0);" class="read-more-lnk">READ MORE</a>
+															</div>
+															<div class="col-md-4">
+																<div class="par-img">
+																	<a href="tohttp://www.lnf.com.br/" target="_blank"> <img src="images/p2.jpg" alt="">
+																	</a>
+																</div>
+																<p><strong>Growing our knowledge and our reach.</strong> At Haas, we are always looking to enhance the quality of the hops we grow through better technology, processes and efficiencies. That’s why we partner with LNF Latino Americana. Founded in 1987 and active in various biotech industries, LNF is a family owned and operated company  that was built on the commitment to deliver highly...</p>
+																<p class="read-more-data"> qualified technical support to companies looking for high product quality and process optimization. The Brewing division of LNFspecializes in hops and works closely with the Barth-Haas Group to develop our presence in the Brazilian market through a very close technical and commercial cooperation</p> <a href="javascript:void(0);" class="read-more-lnk">READ MORE</a>
+															</p>
+														</div>
+														<div class="col-md-4">
+															<div class="par-img">
+																<a href="http://www.wvhops.us/index.php?p=home" target="_blank"> <img src="images/p3.jpg" alt="">
+																</a>
+															</div>
+															<p><strong>You don’t have to be big to get Haas hops. But you do have to think big.</strong>
+ Just because you’re a small brewery, doesn’t mean you shouldn’t be able to get your hands on high quality Haas hops. And thanks to our partnership with Willamette Valley Hops LLC, you can. Willamette Valley Hops is an Oregon-based family-owned premium hop distributer, which specializes in the special needs of the craft industry.</p>
+															<p class="read-more-data">  Located in the heart of Oregon’s Willamette Valley hop growing region, Bruce Wolf, the company’s founder and CEO, leads a passionate sales team and production staff to provide over 50 different domestic and foreign hop varieties to brewers worldwide. The partnership between John I. Haas and Willamette Valley Hops provides an effective and efficient means to give small brewers access to the best hops in the world.... </p> <a href="javascript:void(0);" class="read-more-lnk">READ MORE</a>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section id="why-haas" data-speed="1" data-type="background" data-identity="why-haas">
+									<div class="container">
+										<div class="row">
+											<h2 class="sec-title">Why Haas</h2>
+											<div class="why-block">
+												<h3>It takes more than hops to make great beer.</h3>
+												<div class="row why-sec">
+													<div class="col-md-6 right-icons">
+														<div class="why-box animateblock left">
+															<div class="why-icon"><img src="images/innovation-icon.png" alt=""> </div>
+															<h4>Innovation</h4>
+															<p>From our world famous hop varieties to our world-class research brewery, Haas has been delivering innovations that lead to better beers and happier brewers.</p>
+														</div>
+														<div class="why-box animateblock left">
+															<div class="why-icon"><img src="images/integrity-icon.png" alt=""> </div>
+															<h4>Integrity</h4>
+															<p>What do you get when you combine the leading United States supplier of hops with the integrity of a 100 year-old family business? Exactly what you were promised. </p>
+														</div>
+														<div class="why-box animateblock left">
+															<div class="why-icon"><img src="images/supply-icon.png" alt=""> </div>
+															<h4>Supply Assurance</h4>
+															<p>Haas has earned a reputation as a steadfast partner who can always be counted on to deliver the hops you were promised when you were promised them.</p>
+														</div>
+													</div>
+													<div class="col-md-6 left-icons">
+														<div class="why-box animateblock right">
+															<div class="why-icon"><img src="images/flexibility-icon.png" alt=""> </div>
+															<h4>Flexibility</h4>
+															<p>Things change. Demand can fluctuate. A new recipe can take off. Which is why Haas does its best to work with our customers to accommodate their changing needs.</p>
+														</div>
+														<div class="why-box animateblock right">
+															<div class="why-icon"><img src="images/service-icon.png" alt=""> </div>
+															<h4>Service</h4>
+															<p>We make it our business to know yours. Because we believe that great service comes from not just knowing what you need, but why you need it.</p>
+														</div>
+														<div class="why-box animateblock right">
+															<div class="why-icon"><img src="images/passion-icon.png" alt=""> </div>
+															<h4>Passion</h4>
+															<p>Haas is not just a supplier, we are breeders, growers – even brewers – who for generations have helped brewers discover their next great flavor.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section id="contact" data-speed="6" data-type="background" data-identity="contact">
+									<div class="container">
+										<div class="row">
+											<h2 class="sec-title">Contact us</h2>
+											<div class="contact-block">
+												<div class="col-md-6">
+													<div class="address">
+														<div class="need-line">
+															<h6>LET'S TALK HOPS.</h6>
+															<p>Whether you need help finding a hop, placing an order or making a reservation at the Innovations Brewery, give us a call at <strong>1-509-469-4000</strong> or fill out the form.</p>
+															<div class="green-par"> <img src="images/green-add-logo.jpg" alt=""> </div>
+														</div>
+														<div class="row add-info">
+															<div class="col-md-6">
+																<h6>Innovations Center</h6>
+																<p>John I. Haas, Inc.
+																	<br>1600 River Road
+																	<br>Yakima, WA 98902
+																	<br>+1-509-469-4000 </p>
+																</div>
+																<div class="col-md-6">
+																	<h6>Headquarters</h6>
+																	<p>John I. Haas, Inc.
+																		<br>5185 MacArthur Blvd. N.W.
+																		<br>Suite 300
+																		<brWashington, D.C. 20016
+																		<br>+ 1 202-777-4800</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-6">
+
+															<div class="contact-form">
+																<form method="post" id="frm-contact">
+																	<input type="text" placeholder="Name" id="frm-name" class="name-in" name="name">
+																	<input type="text" placeholder="Email" id="frm-email" class="email-in" name="email">
+																	<input type="text" placeholder="Website" id="frm-website" class="full-in" name="website">
+																	<span class="custom-sel">
+																	  <select class="select-in styled" name="subject" id="frm-subject" name="contact-sel">
+																		  <option selected value="">Select your subject</option>
+																		  <option value="Buy hops or hop products">Buy hops or hop products</option>
+																		  <option value="Make an Innovations Brewery Reservation">Make an Innovations Brewery Reservation</option>
+																		  <option value="Make an Innovations Brewery Reservation">Request More Information</option>
+																	  </select>
+																  </span>
+																  <textarea class="text-in" placeholder="Type your message here" cols="2" rows="2" name="message"></textarea>
+																  <button class="submit-btn">Submit</button>
+																  <div class="alert alert-success" role="alert" style="display:none;">
+																	<a href="javascript:void(0);" class="alert-link" id="success-error-message"></a>
+																</div>
+															</form>
+														</div>
+
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</section>
+									<script src="js/bootstrap.min.js"></script>
+									<script src="js/jquery.easing.min.js"></script>
+									<!-- <script src="js/jquery.sidr.min.js"></script>-->
+									<script type="text/javascript" src="js/hamburger.js"></script>
+									<script src="js/scrolling-nav.js"></script>
+									<script src="js/init.js"></script>
+
+								</body>
+
+								</html>

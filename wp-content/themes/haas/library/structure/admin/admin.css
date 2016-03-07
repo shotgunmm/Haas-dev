@@ -1,0 +1,72 @@
+/* ADMIN BAR */
+	#wp-admin-bar-wp-logo,
+	#wp-admin-bar-customize,
+	#wp-admin-bar-widgets,
+	#wp-admin-bar-background,
+	#wp-admin-bar-comments,
+	#wp-admin-bar-new-user-message,
+	#wp-admin-bar-new-media
+	{ display: none !important; }
+
+	.sgf-link { display: inline-block; top: 10px; position: relative; vertical-align: middle; }
+	.sgf-link img { width: 140px; }
+
+	.hm-link { display: inline-block; top: 10px; position: relative; vertical-align: middle; margin-left: 20px; }
+	.hm-link img { width: 35px; }
+	
+	#footer-upgrade span {
+		margin: 0 10px 0 2px;
+		font-size: 18px;
+		display: inline-block;
+		position: relative;
+		top: 9px;
+	}
+
+/* DASHBOARD */	
+/*
+	#welcome-panel,
+	#postbox-container-1,
+	#postbox-container-2,
+	#postbox-container-3,
+	#postbox-container-4
+	{ display: none !important; }
+*/	
+	
+/* ADMIN SIDEBAR */
+	#menu-posts,
+	#menu-comments,
+	#toplevel_page_edit-post_type-acf
+	{ display: none; }
+
+	#menu-posts-news-events .dashicons-before:before { content: "\f157"; }
+	#menu-posts-team .dashicons-before:before { content: "\f307"; }	
+	#menu-posts-product .dashicons-before:before { content: "\f155"; }
+	#menu-posts-career .dashicons-before:before { content: "\f338"; }
+	#menu-posts-contact .dashicons-before:before{ content: "\f466"; }
+	#menu-posts-contact .wp-submenu-wrap, #menu-posts-contact.opensub:after { display: none !important; }
+	#menu-posts-variety .dashicons-before:before {
+		content: "";
+		background-image: url(../../images/hop-icon.png);
+		background-size: 18px 18px;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+/* CONTACT/INQUIRIES */
+	body.post-type-contact .add-new-h2 { display: none; }
+	body.post-php.post-type-contact #minor-publishing,
+	body.post-php.post-type-contact #submitdiv .handlediv,
+	body.post-php.post-type-contact #submitdiv .hndle,
+	body.post-php.post-type-contact #publishing-action
+	{ display: none; } 
+	
+	body.post-php.post-type-contact #major-publishing-actions { border: 0; }
+
+/* ADMIN BAR */
+	#wp-admin-bar-wp-logo,
+	#wp-admin-bar-comments
+	{ display: none !important; }
+
+/* OTHER */
+	.username .avatar { display: none; }
+	#wordfenceConfigWarning { display: none; }

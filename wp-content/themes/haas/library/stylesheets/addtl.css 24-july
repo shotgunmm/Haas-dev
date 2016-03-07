@@ -1,0 +1,81 @@
+/* SAFARI FLICKER FIX */
+.flicker-fix { -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; }
+
+/* SORT VARIETIES BY REGION */
+.var-sort-list-wrap {
+	height: 300px;
+	position: relative;
+	margin-top: 37px;
+	background: white;
+}
+
+.var-sort-list div span {
+	color: #408620;
+	float: left;
+	line-height: 50px;
+	margin: 0 0 1px;
+	padding: 0 15px;
+	width: 100%;
+	background: #408620;
+	background: #dae4d7;
+	font-size: 20px;
+	font-family: transat_standardbold;	
+	text-transform: uppercase;
+	text-align: center;
+}
+.var-sort-list { display: none; position: absolute; }
+.var-sort-list ul li { background: #ecf1eb }
+.var-sort-list.active { display: block; }
+
+
+/* INDENT SUB PRODUCTS */
+.product-list li.sub-item h6 { padding-left: 35px; }
+
+.green-container-wrap {
+	position: relative;
+	padding-right: 30px;
+}
+.green-container { width: 100%; }
+.green-container .cross-img { margin-right: 15px; }
+
+.event-block-leftside ul {
+	padding: 0;
+	list-style: none;
+}
+
+.event-block-leftside ul li {
+	margin-bottom: 10px;
+	line-height: 18px;
+}
+
+.line-divider img { width: 100% !important; height: auto !important; }
+
+h3.search { color: white; padding-left: 15px; margin: -25px 0; }
+
+.blog-pagination { padding: 0; float: left; margin-top: 5px; }
+.blog-pagination li { display: inline-block; }
+.blog-pagination li a { background: white; padding: 8px; box-sizing: border-box; font-family: transatmedium; width: 40px; display: block; text-align: center; }
+.blog-pagination li a.active, .blog-pagination li a.active:hover { background: #495741; color: white; cursor: default; }
+.blog-pagination li a:hover, .blog-pagination li a:active { text-decoration: none; background: #408620; color: white; }
+
+
+@media ( max-width: 991px ) {
+	.var-sort-list-wrap {
+		margin-top: 65px;
+	}
+}
+@media ( min-width: 992px ) {
+	.var-sort-list-wrap {
+		margin-top: 54px;
+	}
+}
+
+.tab-pane.fade.other-height.resource-tab { min-height: 360px !important; }
+
+
+
+.brewer {
+	color: #777777;
+	font: 12px museo300;
+	text-align: center;
+}
