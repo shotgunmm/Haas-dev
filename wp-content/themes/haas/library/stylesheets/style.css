@@ -784,11 +784,11 @@ footer.footer {
   width: 100%;
 }
 .footer .footer-para {
-  float: left;
+  float: right;
   margin: 0;
   padding: 0 20px;
   text-align: right;
-  width: 100%;
+  width: 50%;
 }
 
 div.navsection li{background: url("../images/green-pattern.jpg") repeat scroll 0 0 #2E5D17;}
@@ -1964,3 +1964,22 @@ nav.resize { width: 20%; }
 #abt-meet.old-wrap ul.divisions li a.active, ul.divisions li a:hover { color: #373737; text-decoration: none; }
 
 
+.footer > ul {
+    float: left;
+    list-style: outside none none;
+    width: 50%;
+    padding: 0 20px;
+}
+
+
+.footer li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.footer li a{
+    color: #fff;
+    font: bold 14px transatlight;
+    text-decoration: none;
+    font-family: arial;
+}

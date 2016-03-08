@@ -3,6 +3,17 @@
 <? global $contact_us ?>
 
 <footer class="footer">
+    <?php if(have_rows('footer_left_section',19)):?>
+    <ul>
+        <?php while(have_rows('footer_left_section',19)):the_row();?>
+        <li>
+            <a href="<?php echo home_url(); the_sub_field('footer_left_text_link',19); ?>">
+                <?php the_sub_field('footer_left_text',19); ?>
+            </a>
+        </li>
+        <?php endwhile; ?>
+    </ul>
+    <?php endif; ?>
 	<p class="footer-para"><?= $contact_us->footer ?></p>
 
 </footer>
