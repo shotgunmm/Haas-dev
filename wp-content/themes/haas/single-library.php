@@ -73,31 +73,29 @@ wp_reset_postdata();
 							<? endif */?>
 							<div class="lib-content">
 								<?//apply_filters( 'the_content', $post->post_content ) ?>
-<? if(get_the_ID()=='851') { ?>
-
 <div class="col-md-7 right-padd lib-form-image">
-<a href="<?= get_featured_image_uri( get_the_ID() ) ?>"><img class="alignleft size-full wp-image-1062" src="<?= get_featured_image_uri( get_the_ID() ) ?>" alt="Haas-Beer Pour" width="440" height="294" /></a>
-</div>
-<div class="left-padd"><?= get_sidebar() ?></div>
-<div class="col-md-12 no-padd">
-<?= apply_filters( 'the_content', $post->post_content ) ?>
+									<a href="<?= get_featured_image_uri( get_the_ID() ) ?>"><img class="alignleft size-full wp-image-1062" src="<?= get_featured_image_uri( get_the_ID() ) ?>" alt="Haas-Beer Pour" width="440" height="294" /></a>
+								</div>
+								<? if(get_field('upload_pdf')){ ?>
+								<div class="left-padd"><?= get_sidebar() ?></div>
+								<? } ?>
+								<div class="col-md-12 no-padd">
+									<?= apply_filters( 'the_content', $post->post_content ) ?>
 
-<?php 
-$info_content = get_field('info_content', '851');
- foreach ( $info_content as $info ) {
-    ?>
-<div class="info">
-<h3><b><?= $info['title']; ?> </b></h3>
-<?= $info['content']; ?>
-<?php
-  }
- ?>
-							</div>
-<? } else {
-echo apply_filters( 'the_content', $post->post_content );
-}
- ?>
-							</div>	
+									<?php 
+									if(get_field('info_content', '851')){
+										$info_content = get_field('info_content');
+										foreach ( $info_content as $info ) {
+											?>
+											<div class="info">
+												<h3><b><?= $info['title']; ?> </b></h3>
+												<?= $info['content']; ?>
+												<?php
+											}
+											?>
+										</div>
+										<? }  ?>
+									</div>	
 							<div class="line-divider"><img src="<?= get_template_directory_uri() ?>/library/images/divider.png" width="509" height="43" alt=""></div>
 							<!--<a class="" href="<?= get_bloginfo('url') ?>/library">&#65513; back</a>-->
 																

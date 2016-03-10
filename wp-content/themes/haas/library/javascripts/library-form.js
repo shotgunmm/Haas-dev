@@ -11,6 +11,7 @@ jQuery(document).ready(function(){
 		var mail = protocol+'//'+path+'/wp-content/themes/haas/library/partials/mail.php';
 		var pdfpath = protocol+'//'+path+'/wp-content/themes/haas/library/partials/pdfDownload.php?pdf='+jQuery('#pdfpath').attr('class');
 		//alert(pdfpath);
+		if( first != "" && last != "" && email != "" && company != ""){
 		jQuery.ajax({
 		  type: "POST",
 		  url: mail,
@@ -26,9 +27,9 @@ jQuery(document).ready(function(){
 		  error: function(XMLHttpRequest, textStatus, errorThrown) {
 		     alert("some error");return false;
 		  }
-		});
-		
-			setTimeout(function(){ location.reload(); }, 5000);
+		});	
+		setTimeout(function(){ location.reload(); }, 5000);
+		}
 				
 	}); 	 	
 });
