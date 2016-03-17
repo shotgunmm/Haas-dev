@@ -73,10 +73,12 @@ wp_reset_postdata();
 							<? endif */?>
 							<div class="lib-content">
 								<?//apply_filters( 'the_content', $post->post_content ) ?>
-<div class="col-md-7 right-padd lib-form-image">
-									<a href="<?= get_featured_image_uri( get_the_ID() ) ?>"><img class="alignleft size-full wp-image-1062" src="<?= get_featured_image_uri( get_the_ID() ) ?>" alt="Haas-Beer Pour" width="440" height="294" /></a>
-								</div>
+
 								<? if(get_field('upload_pdf')){ ?>
+								<div class="col-md-7 right-padd lib-form-image">
+									<a href="<?= get_featured_image_uri( get_the_ID() ) ?>"><img class="alignleft size-full wp-image-1062" src="<?= get_featured_image_uri( get_the_ID() ) ?>"  width="440" height="294" /></a>
+								</div>
+								
 								<div class="left-padd"><?= get_sidebar() ?></div>
 								<? } ?>
 								<div class="col-md-12 no-padd">
